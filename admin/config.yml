@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway # Netlify’s Git Gateway connects to Git provider’s API
+  branch: master # Branch to update (master by default)
+
+media_folder: "uploads" # Folder where user uploaded files should go
+
+publish_mode: editorial_workflow
+
+collections: # A list of collections the CMS should be able to edit
+    # PAGES
+  - name: "docs"
+    label: "Docs"
+    folder: "docs"
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      # - {label: "Has Children", name: "has_children", widget: "list"}
+      - label: "Раздел"
+        name: "parent"
+        widget: "select"
+        options: ["Arch Linux", "Ctlos Linux", "DE", "WM", "Config"]
+        default: ["Arch Linux"]
+      - label: "Новый раздел"
+        name: "has_children"
+        widget: "boolean"
+      - {label: "Permalink", name: "permalink", widget: "string", required: false}
+      - {label: "Nav Order", name: "nav_order", widget: "string", required: true}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
