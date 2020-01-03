@@ -1,11 +1,11 @@
 title: dfo
 description: Подборка заметок о Linux. Alex Creio — owner Ctlos Linux
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dfo.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 # permalink: /:title/
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "*.sh", "*.toml", "README.md", "Rakefile"]
 
 # Set a path/url to a logo that will be displayed instead of the title
 # logo: "/assets/images/logo.svg"

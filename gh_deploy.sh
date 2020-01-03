@@ -1,4 +1,9 @@
 #!/bin/bash
+# create gh-pages branch
+# git pull
+# create local
+# git branch gh-pages origin/gh-pages
+
 directory=_site
 branch=gh-pages
 build_command() {
