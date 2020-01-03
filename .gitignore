@@ -1,7 +1,8 @@
 *.gem
+.DS_Store
 .bundle
 .sass-cache
+.jekyll-cache
 _site
-Gemfile.lock
 package-lock.json
 node_modules
